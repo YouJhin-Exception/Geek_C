@@ -10,7 +10,6 @@ spot2[0] =  Convert.ToDouble(Console.ReadLine());
 spot2[1] =  Convert.ToDouble(Console.ReadLine());
 spot2[2] =  Convert.ToDouble(Console.ReadLine());
 
-
 double Dist3D (double[] sp1, double[] sp2)
 {
   double dis = Math.Sqrt(Math.Pow(spot2[0]-spot1[0],2) + Math.Pow(spot2[1]-spot1[1],2) + Math.Pow(spot2[2]-spot1[2],2));
