@@ -34,8 +34,8 @@ void PrintArr(int[] arr)  //
 
 }
 
-//RandomArr(mass1);
-//PrintArr(mass1);
+RandomArr(mass1);
+PrintArr(mass1);
 
 ConsoleArray(mass1);
 PrintArr(mass1);
