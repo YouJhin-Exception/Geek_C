@@ -27,18 +27,18 @@ void PrintArray(int[] array)
 
 void ProIzi(int[] array)
 {
-    PrintArray(array);    
+    PrintArray(array);
     int[] proArr;
-    if ( array.Length % 2 == 0 )
-    proArr = new int[array.Length/2];
-    else proArr = new int[array.Length/2+1]; 
-   
+    if (array.Length % 2 == 0)
+        proArr = new int[array.Length / 2];
+    else proArr = new int[array.Length / 2 + 1];
+
     for (int i = 0; i < proArr.Length; i++)
     {
-        proArr[i] = array[i] * array[array.Length-1-i];
+        proArr[i] = array[i] * array[array.Length - 1 - i];
     }
     if (array.Length % 2 != 0) // если длинна исходного не четная
-    proArr[array.Length/2] = array[array.Length/2]; //замена последнего корня элемента, на нечетный, без парный в исходном масиве
+        proArr[array.Length / 2] = array[array.Length / 2]; //замена последнего корня элемента, на нечетный, без парный в исходном масиве
 
 
     System.Console.WriteLine();
@@ -46,4 +46,4 @@ void ProIzi(int[] array)
 
 }
 
-ProIzi(CreateArray(7,0,9));
+ProIzi(CreateArray(7, 0, 9));
